@@ -1,3 +1,47 @@
+<!DOCTYPE html>
 <html>
+	<head>
+		<style>
+			body {background-color: #232426;}
+			.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+h1 {
+color: #FFFFFF
+}
+		</style>
+		<link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/2ba929af-862f-417c-b4c7-dd11a04e4a9e/Dorfweare%20new%201.png?v=1650062536609">
+	</head>
+	<body>
+		<div class="grid-container">
+  			<div class="item1">
+				<h1><img src="https://cdn.glitch.global/2ba929af-862f-417c-b4c7-dd11a04e4a9e/Dorfweare%20new%201.png?v=1650062536609" alt="Logo" style="height:50px;">  Dorfweare</h1>
+			</div>
+  			<div class="item2">Menu</div>
+  			<div class="item3">Main</div>  
+  			<div class="item4">
+				<iframe src="https://discord.com/widget?id=630744606207770634&theme=dark"  allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+			</div>
+  			<div class="item5">Footer</div>
+		</div>
+	</body>
 </html>
